@@ -1,0 +1,30 @@
+//Mathison and pangrams
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		    int []prices=new int[26];
+		    for(int i=0;i<26;i++){
+		        prices[i]=sc.nextInt();
+		    }
+		    sc.nextLine();
+		    String s=sc.nextLine();
+		    boolean present[]=new boolean[26];
+		    for(char ch:s.toCharArray()){
+		        present[ch - 'a']=true;
+		    }
+		    long cost=0;
+		    for(int i=0;i<26;i++){
+		        if(!present[i]){
+		            cost+=prices[i];
+		        }
+		    }
+		    System.out.println(cost);
+		}
+
+	}
+}
