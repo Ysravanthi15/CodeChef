@@ -1,0 +1,17 @@
+//Squid Game - Piggy Bank
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int K=sc.nextInt();
+		int diff=N-K;
+		int mul=diff*10000;
+		System.out.println(mul);
+		
+		
+
+	}
+}
