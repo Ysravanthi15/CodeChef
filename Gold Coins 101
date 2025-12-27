@@ -1,0 +1,15 @@
+//Gold Coins 101
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		   Scanner sc=new Scanner(System.in);
+		   int A=sc.nextInt();
+		   int B=sc.nextInt();
+		   int X=sc.nextInt();
+		   int Y=sc.nextInt();
+		   System.out.println(X > Y ? A : B);
+
+	}
+}
