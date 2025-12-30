@@ -1,0 +1,18 @@
+//Writing Speed
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		int res=T*5;
+		if(res>60){
+		    System.out.println("NO");
+		}
+		else{
+		    System.out.println("YES");
+		}
+
+	}
+}
