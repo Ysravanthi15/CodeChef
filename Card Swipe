@@ -1,0 +1,34 @@
+//Card Swipe
+class Codechef
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		   int X=sc.nextInt();
+		   int A[]=new int[X];
+		   for(int i=0;i<X;i++){
+		       A[i]=sc.nextInt();
+		   }
+		   boolean inside[]=new boolean[X+1];
+		   int curcount=0;
+		   int max=0;
+		   for(int x:A){
+		       if(!inside[x]){
+		           inside[x]=true;
+		           curcount++;
+		       }
+		       else{
+		           inside[x]=false;
+		           curcount--;
+		       }
+		       max=Math.max(max,curcount);
+		   }
+		   System.out.println(max);
+		}
+
+	}
+}
