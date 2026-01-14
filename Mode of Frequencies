@@ -1,0 +1,39 @@
+//Mode of Frequencies
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		   int N=sc.nextInt();
+		   int arr[]=new int[N];
+		   for(int i=0;i<N;i++){
+		       arr[i]=sc.nextInt();
+		   }
+		   HashMap<Integer,Integer>hm=new HashMap<>();
+		   for(int i=0;i<N;i++){
+		       int key=arr[i];
+		       hm.put(key,hm.getOrDefault(key,0)+1);
+		   }
+		   HashMap<Integer,Integer>freq=new HashMap<>();
+		   for(int f:hm.values()){
+		       freq.put(f,freq.getOrDefault(f,0)+1);
+		   }
+		   int answer=Integer.MAX_VALUE;
+		   int maxcount =0;
+		   for(int f: freq.keySet()){
+		       int count=freq.get(f);
+		       if(count>maxcount || (count==maxcount&& f<answer)){
+		           maxcount=count;
+		           answer=f;
+		       }
+		   }
+		   System.out.println(answer);
+		   
+		   
+		}
+
+	}
+}
