@@ -1,0 +1,33 @@
+//Your Name is Mine
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		   String M=sc.next();
+		   String W=sc.next();
+		    boolean ok = false;
+
+            int i = 0, j = 0;
+            while (i < M.length() && j < W.length()) {
+                if (M.charAt(i) == W.charAt(j)) i++;
+                j++;
+            }
+            if (i == M.length()) ok = true;
+            if (!ok) {
+                i = 0; j = 0;
+                while (i < W.length() && j < M.length()) {
+                    if (W.charAt(i) == M.charAt(j)) i++;
+                    j++;
+                }
+                if (i == W.length()) ok = true;
+            }
+
+            System.out.println(ok ? "YES" : "NO");
+		}
+
+	}
+}
