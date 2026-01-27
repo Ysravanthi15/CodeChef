@@ -1,0 +1,26 @@
+//Equal Elements
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		   int X=sc.nextInt();
+		   int a[]=new int[X];
+		   for(int i=0;i<X;i++){
+		       a[i]=sc.nextInt();
+		   }
+		   HashMap<Integer,Integer>map=new HashMap<>();
+		   int maxfrq=0;
+		   for(int i=0;i<X;i++){
+		       int key=a[i];
+		       map.put(key,map.getOrDefault(key,0)+1);
+		       maxfrq=Math.max(maxfrq,map.get(key));
+		   }
+		   System.out.println(X-maxfrq);
+		}
+
+	}
+}
