@@ -1,0 +1,15 @@
+//Moneymaking
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int X=sc.nextInt();
+		int Y=sc.nextInt();
+		int res=X*5000;
+		int res1=Y*9800;
+		System.out.println(res+res1);
+
+	}
+}
