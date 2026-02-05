@@ -1,0 +1,33 @@
+///Pizza Split
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		if(T%2==0){
+		    System.out.println("1");
+		}
+		else{
+		    System.out.println("2");
+		}
+
+	}
+}
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		if(T%2==0){
+		    System.out.println("1");
+		}
+		else{
+		    System.out.println("2");
+		}
+
+	}
+}
