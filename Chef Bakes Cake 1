@@ -1,0 +1,15 @@
+//Chef Bakes Cake 1
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int N = sc.nextInt();
+        int M = sc.nextInt();
+        
+        int profit = (50 * M) - (30 * N);
+        
+        System.out.println(profit);
+	}
+}
