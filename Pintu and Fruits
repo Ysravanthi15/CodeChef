@@ -1,0 +1,33 @@
+//Pintu and Fruits
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		   int N=sc.nextInt();
+		   int M=sc.nextInt();
+		   int F[]=new int[N];
+		   for(int i=0;i<N;i++){
+		       F[i]=sc.nextInt();
+		   }
+		   int P[]=new int[N];
+		   for(int i=0;i<N;i++){
+		       P[i]=sc.nextInt();
+		   }
+		   HashMap<Integer,Integer>map=new HashMap<>();
+		   for(int i=0;i<N;i++){
+		       map.put(F[i],map.getOrDefault(F[i],0)+P[i]);
+		   }
+		   int mins=Integer.MAX_VALUE;
+		   for(int cost:map.values()){
+		       mins=Math.min(mins,cost);
+		   }
+		   System.out.println(mins);
+		   
+		}
+
+	}
+}
