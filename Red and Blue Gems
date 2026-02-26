@@ -1,0 +1,20 @@
+//Red and Blue Gems
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int R = sc.nextInt();
+        int B = sc.nextInt();
+        int P = sc.nextInt();
+        int Q = sc.nextInt();
+
+        int redCoins = R * P;
+        int blueCoins = B * Q;
+
+        System.out.println(Math.max(redCoins, blueCoins));
+		
+
+	}
+}
