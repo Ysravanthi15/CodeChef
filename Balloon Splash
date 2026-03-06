@@ -1,0 +1,21 @@
+//Balloon Splash
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int A=sc.nextInt();
+		int B=sc.nextInt();
+		if(A<B){
+		    System.out.println("Bob");
+		}
+		else if(A>B){
+		    System.out.println("Alice");
+		}
+		else{
+		    System.out.println("Draw");
+		}
+
+	}
+}
